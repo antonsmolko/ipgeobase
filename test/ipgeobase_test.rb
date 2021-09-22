@@ -8,7 +8,7 @@ class IpgeobaseTest < Minitest::Test
     refute_nil ::Ipgeobase::VERSION
   end
 
-  def test_it_does_something_useful
+  def test_ipgeobase
     raw_response_file_path = File.expand_path("../test/response.xml", __dir__)
     raw_response_file = File.open(raw_response_file_path, "r")
 
