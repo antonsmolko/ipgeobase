@@ -15,5 +15,5 @@ group :test do
   gem "webmock"
 end
 
-gem 'nokogiri-happymapper', require: 'happymapper'
 gem "addressable"
+gem "nokogiri-happymapper", require: "happymapper"

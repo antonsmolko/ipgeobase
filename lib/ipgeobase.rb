@@ -5,6 +5,7 @@ require "happymapper"
 
 require_relative "ipgeobase/version"
 
+# Ipgeobase module
 module Ipgeobase
   class Error < StandardError; end
 
