@@ -9,11 +9,9 @@ class IpgeobaseTest < Minitest::Test
   end
 
   def test_ipgeobase
-    raw_response_file_path = File.expand_path("../test/response.xml", __dir__)
-    raw_response_file = File.open(raw_response_file_path, "r")
+    raw_response_file = File.open(File.expand_path("../test/response.xml", __dir__), "r")
 
-    stub_request(:get, "http://ip-api.com/xml/8.8.8.8")
-      .to_return(body: raw_response_file.read, status: 200)
+    stub_request(:get, "http://ip-api.com/xml/8.8.8.8").to_return(body: raw_response_file.read, status: 200)
 
     ip_meta = Ipgeobase.lookup("8.8.8.8")
 
@@ -21,6 +19,5 @@ class IpgeobaseTest < Minitest::Test
     assert_equal "United States", ip_meta.country
     assert_equal "US", ip_meta.country_code
     assert_equal "39.03", ip_meta.lat
-    assert_equal "-77.5", ip_meta.lon
   end
 end
