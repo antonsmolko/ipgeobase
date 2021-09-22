@@ -1,6 +1,6 @@
 # Ipgeobase
 ### Tests and linter status:
-![Actions Status](https://github.com/antonsmolko/ipgeobase/actions/workflows/main/badge.svg)
+[![Actions Status](https://github.com/antonsmolko/ipgeobase/workflows/main/badge.svg)](https://github.com/antonsmolko/ipgeobase/actions)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ipgeobase`. To experiment with that code, run `bin/console` for an interactive prompt.
 
